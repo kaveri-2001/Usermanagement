@@ -10,7 +10,7 @@ function EditUser ({ onClose, onUpdateUser, selectedUserDetails }) {
 
         // Validation for email
         if (name === "email") {
-            const validEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            const validEmailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+.com/;
             if (value.match(validEmailRegex)) {
                 setErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
             } else {
@@ -60,7 +60,7 @@ function EditUser ({ onClose, onUpdateUser, selectedUserDetails }) {
             })
             .catch((error) => console.error("Error saving user:", error));
     };
-
+    
     if (!user) {
         return <div>Loading...</div>;
     }

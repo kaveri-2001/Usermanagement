@@ -4,7 +4,7 @@ import EditUser from "../EditUser/EditUser";
 
 const ViewUsers = () => {
     const [users, setUsers] = useState([]);
-    const [selectedUserId, setSelectedUserId] = useState(null); // State to track selected user for editing
+    const [selectedUserDetails, setSelectedUserDetails] = useState(null)  
 
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
@@ -20,25 +20,25 @@ const ViewUsers = () => {
     };
 
     const handleEditUser = (id) => {
-        setSelectedUserId(id); // Set the user ID to open the EditUser form
-    };
+        setSelectedUserDetails(users.find((user) => user.id === id))
+    }
 
     const handleCloseEdit = () => {
-        setSelectedUserId(null); // Close the EditUser form
+        setSelectedUserDetails(null); // Close the EditUser form
     };
 
     const handleUpdateUser = (updatedUser) => {
         setUsers((prevUsers) =>
             prevUsers.map((user) => (user.id === updatedUser.id ? updatedUser : user))
         );
-        setSelectedUserId(null); // Close the EditUser form after saving
+        setSelectedUserDetails(null); // Close the EditUser form after saving
     };
     
 
     return (
         <div className="table-container">
-            {selectedUserId ? (
-                <EditUser userId={selectedUserId} onClose={handleCloseEdit} onUpdateUser={handleUpdateUser} />
+            {selectedUserDetails ? (
+                <EditUser onClose={handleCloseEdit} onUpdateUser={handleUpdateUser} selectedUserDetails={selectedUserDetails}/>
             ) : (
                 <table>
                     <thead>

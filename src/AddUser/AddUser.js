@@ -29,7 +29,7 @@ function AddUser() {
       if ((name === "firstName" || name === "lastName") && !/^[A-Za-z\s]+$/.test(value)) {
         errorMessage = "Name is Invalid";
       } else if (name === "email") {
-        const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z]+.com/;
         if (!validRegex.test(value)) {
           errorMessage = "Email is Invalid";
         }
