@@ -1,0 +1,54 @@
+.table-container {
+    padding: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Add spacing between the buttons */
+}
+
+button {
+    padding: 8px 15px;  /* Adjust padding for better button size */
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px; /* Rounded corners for the buttons */
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Default colors */
+button.delete {
+    background-color: #dc3545; /* Red color for delete */
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+button.edit {
+    background-color: #007bff; /* Blue color for edit */
+    color: white;
+}
+
+button.edit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}

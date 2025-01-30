@@ -1,0 +1,73 @@
+/* Updated CSS for EditUser */
+.edit-user-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the form appears on top of other content */
+    width: 400px; /* You can adjust this based on your needs */
+    max-width: 100%;
+}
+
+.edit-user-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-user-form label {
+    margin-bottom: 10px;
+}
+
+.edit-user-form input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-user-form .button-container {
+    display: flex;
+    justify-content: space-between; /* Space between the buttons */
+    gap: 10px; /* Optional: adds some space between the buttons */
+}
+
+.edit-user-form button {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%; /* Ensures the buttons fit in the row */
+}
+
+.edit-user-form .save-button {
+    background-color: #007BFF; /* Blue color for Save */
+    color: white;
+    border: none;
+}
+
+.edit-user-form .save-button:hover {
+    background-color: #0056b3;
+}
+
+.edit-user-form .cancel-button {
+    background-color: black; /* Black color for Cancel */
+    color: white;
+    border: none;
+}
+
+.edit-user-form .cancel-button:hover {
+    background-color: #333;
+}
+
+.edit-user-form button:focus {
+    outline: none;
+}
+
+.edit-user-form .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
