@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kaveri-2001/Usermanagement.git/static/css/main.f4da71ef.css",
+    "main.js": "/kaveri-2001/Usermanagement.git/static/js/main.1b992449.js",
+    "static/js/488.9686a7bf.chunk.js": "/kaveri-2001/Usermanagement.git/static/js/488.9686a7bf.chunk.js",
+    "index.html": "/kaveri-2001/Usermanagement.git/index.html",
+    "main.f4da71ef.css.map": "/kaveri-2001/Usermanagement.git/static/css/main.f4da71ef.css.map",
+    "main.1b992449.js.map": "/kaveri-2001/Usermanagement.git/static/js/main.1b992449.js.map",
+    "488.9686a7bf.chunk.js.map": "/kaveri-2001/Usermanagement.git/static/js/488.9686a7bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4da71ef.css",
+    "static/js/main.1b992449.js"
+  ]
+}
